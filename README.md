@@ -1,4 +1,4 @@
-######** Deploy Stack
+###### Deploy Stack
 ./deploy.sh stack-name
 
 ```
