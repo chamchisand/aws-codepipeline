@@ -21,3 +21,7 @@ aws cloudformation deploy
 ./delete.sh stack-name
 
 aws cloudformation delete-stack --stack-name 
+
+
+##### Release Change
+aws codepipeline start-pipeline-execution --name 
