@@ -218,7 +218,7 @@ Resources:
               Configuration:
                 Owner: !Ref GitOwner
                 Repo: !Ref GitRepo
-                BranchName: !Ref GitBranch
+                Branch: !Ref GitBranch
                 PollForSourceChanges: false
                 # OAuthToken: !Ref GitOAuthToken
         - Name: Release
