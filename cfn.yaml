@@ -217,10 +217,10 @@ Resources:
                 - Name: SourceOutput
               Configuration:
                 Owner: !Ref GitOwner
-                RepositoryName: !Ref GitRepo
+                Repo: !Ref GitRepo
                 BranchName: !Ref GitBranch
-                # OAuthToken: !Ref GitOAuthToken
                 PollForSourceChanges: false
+                # OAuthToken: !Ref GitOAuthToken
         - Name: Release
           Actions:
             - Name: Release
