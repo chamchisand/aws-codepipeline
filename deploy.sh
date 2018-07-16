@@ -36,7 +36,7 @@ KeyPairName=
 GitOwner=chmchisand
 GitRepo=aws-codepipeline
 GitBranch=master
-GitOAuthToken=a6d3d3a2fe7b2ca4765e1c3a3e2fa365f4c8dd2b
+GitOAuthToken=
 
 if [ -z "$stack_name" ]; then
   echo Usage: $0 stack-name
@@ -50,6 +50,10 @@ prompt VpcId
 prompt SubnetIDs
 prompt InstanceProfile
 prompt KeyPairName
+prompt GitOwner
+prompt GitRepo
+prompt GitBranch
+prompt GitOAuthToken
 
 aws cloudformation validate-template --template-body file://$yaml --output text
 
