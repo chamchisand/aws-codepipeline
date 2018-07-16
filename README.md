@@ -1,4 +1,4 @@
-***** DEPLOY **
+######** Deploy Stack
 ./deploy.sh stack-name
 
 ```
@@ -17,7 +17,7 @@ aws cloudformation deploy
     GitBranch=<value>
 ```
 
-** DELETE STACK **
+###### Delete Stack
 ./delete.sh stack-name
 
 aws cloudformation delete-stack --stack-name 
