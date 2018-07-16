@@ -28,11 +28,11 @@ yaml=./cfn.yaml
 
 AppName=HelloWorld
 InstanceType=t2.micro
-InstanceProfile=
 ImageId=
 VpcId=
-KeyPairName=
 SubnetIDs=
+InstanceProfile=
+KeyPairName=
 GitOwner=
 GitRepo=
 GitBranch=
@@ -45,15 +45,15 @@ fi
 
 prompt AppName
 prompt InstanceType
+prompt ImageId
+prompt VpcId
+prompt SubnetIDs
 prompt InstanceProfile
+prompt KeyPairName
 prompt GitOwner
 prompt GitRepo
 prompt GitBranch
 # prompt GitOAuthToken
-prompt ImageId
-prompt VpcId
-prompt KeyPairName
-prompt SubnetIDs
 
 aws cloudformation validate-template --template-body file://$yaml --output text
 
