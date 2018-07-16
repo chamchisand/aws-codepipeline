@@ -36,7 +36,7 @@ KeyPairName=
 GitOwner=chmchisand
 GitRepo=aws-codepipeline
 GitBranch=master
-GitOAuthToken=76a5bc1706b550f821d536c9196d4cbe2322b226
+GitOAuthToken=563308843d12880901e33eb855dac5c2a501fd58
 
 if [ -z "$stack_name" ]; then
   echo Usage: $0 stack-name
