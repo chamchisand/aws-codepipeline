@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www
+  - source: /nginx.conf
+    destination: /etc/nginx
+hooks:
+  AfterInstall:
+    - location: ./scripts/after_install.sh
+      runas: root
+  ApplicationStart:
+    - location: ./scripts/app_start.sh
+    - location: ./scripts/nginx_start.sh
+      runas: root
+  ApplicationStop:
+    - location: ./scripts/nginx_stop.sh
+      runas: root
+    - location: ./scripts/app_stop.sh
